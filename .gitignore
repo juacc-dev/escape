@@ -1,0 +1,8 @@
+build
+*.so
+*.a
+*.out
+benchmark
+demo
+compile_commands.json
+.cache
