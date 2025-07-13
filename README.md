@@ -52,6 +52,8 @@ More examples can be found in `example/`
 There is support for C++ through the `esc` namespace, e.g `esc::printc()`.
 
 ## TODO
-Not all escape sequences were implemented (yet).
+By far the biggest problem is that it's not possible to turn the functionality off at runtime and there is nothing implemented to prevent colored output on terminals that don't support it (`termios.h` and so on).
 
-The biggest problem is performance. It's not really bad but it could be way better. Right now, functions like `printc()` parse the given string at runtime even tho all the necessary information is known at compile time. It would be nice to have zero overhead but it is a hard problem to solve.
+Not all escape sequences were implemented (yet). Those that I would use are though.
+
+Performance is a bit of an issue. It's not really bad but it could be way better. Right now, functions like `printc()` parse the given string at runtime even tho all the necessary information is known at compile time. It would be nice to have zero overhead but it is a hard problem to solve.
