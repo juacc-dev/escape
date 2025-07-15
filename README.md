@@ -52,7 +52,7 @@ More examples can be found in `example/`
 There is support for C++ through the `esc` namespace, e.g `esc::printc()`.
 
 ## TODO
-By far the biggest problem is that it's not possible to turn the functionality off at runtime and there is nothing implemented to prevent colored output on terminals that don't support it (`termios.h` and so on).
+By far the biggest problem is that it's not possible to turn the functionality off at runtime and there is nothing implemented to prevent colored output on terminals that don't support it ([haha](https://twoot.site/@bean/113056942625234032)).
 
 Not all escape sequences were implemented (yet). Those that I would use are though.
 
